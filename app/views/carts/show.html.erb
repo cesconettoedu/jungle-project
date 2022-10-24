@@ -32,12 +32,10 @@
     </table>
   </div>
 
-
 <% if @empty_cart  %>
-  <h1> EMPTY </h1>
+  <h3> My Cart is empty </h3>
+  <a class="navbar-brand" href="<%= root_path %>">Click to Select items</a> 
 <%  else  %> 
-
-
 
   <div class="row">
     <div class="col-xs-12">
@@ -56,8 +54,6 @@
     </div>
   </div>
 
-
  <% end %> 
-
 
 </section>
