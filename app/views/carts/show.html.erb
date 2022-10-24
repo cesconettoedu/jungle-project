@@ -32,6 +32,13 @@
     </table>
   </div>
 
+
+<% if @empty_cart  %>
+  <h1> EMPTY </h1>
+<%  else  %> 
+
+
+
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -48,5 +55,9 @@
       <% end %>
     </div>
   </div>
+
+
+ <% end %> 
+
 
 </section>
