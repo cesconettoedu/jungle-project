@@ -12,12 +12,15 @@
       <span class="soldout">Sold Out</span>
 
 
-       <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
+<%
+=begin%>
+      Or disable or not
+      <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
         method: :post do %>
         <%= fa_icon "shopping-cart", text: 'Add' %> 
-      <% end %> 
-
-
+      <% end %>  
+<%
+=end%>
 
     <%  else  %> 
       <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,

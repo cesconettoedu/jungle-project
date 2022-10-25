@@ -60,6 +60,7 @@ main section.categories-show {
           background: white;
           color: rgba(0, 130, 29, 0.7);
         }
+
       }
       img {
         width: 100%;
@@ -86,7 +87,8 @@ main section.categories-show {
       }
       div {
         display: flex;
-        justify-content: space-between;
+        justify-content: right; 
+        // justify-content: space-between; if i let the 2 buttons appears
         padding: 0.5em;
         form {
           display: inline-block;
