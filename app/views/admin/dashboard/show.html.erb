@@ -1,16 +1,28 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
-
-
-<p>How many products are in the database </p>
-<div>
-  <%= link_to @products, "/admin/products" %>
+<div class="card">
+  <div class="card-body">
+    <h1>Admin::Dashboard#show</h1>
+    <p>Find me in app/views/admin/dashboard/show.html.erb</p>
+  </div>
 </div>
 
 
-<p>how many categories are in the database</p>
-<div>
-  <%= link_to @categories, "/admin/products" %>
+<br>       
+
+
+<div class="card">
+  <div class="card-header">
+    How many products are in the database:
+  </div>
+  <div class="card-body"> 
+    <%= link_to @products, "/admin/products" %>
+  </div>
 </div>
 
-
+<div class="card">
+  <div class="card-header">
+    How many categories are in the database:
+  </div>
+  <div class="card-body"> 
+    <%= link_to @categories, "/admin/products" %>
+  </div>
+</div>
