@@ -50,8 +50,10 @@ main section.categories-show {
         }
 
         .soldout {
-          background: rgb(255, 217, 0);
+          background: white;
           color: rgb(236, 5, 5);
+          border: 2px solid rgba(255, 55, 55, 0.8);
+
         }
 
         button {
