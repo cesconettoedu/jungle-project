@@ -25,12 +25,17 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
     </table>
   </div>
+
+<% if @empty_cart  %>
+  <h3 class="alert alert-warning"> My Cart is empty </h3>
+  <a class="btn btn-success" href="<%= root_path %>">Click to Select items</a> 
+<%  else  %> 
 
   <div class="row">
     <div class="col-xs-12">
@@ -48,5 +53,7 @@
       <% end %>
     </div>
   </div>
+
+ <% end %> 
 
 </section>

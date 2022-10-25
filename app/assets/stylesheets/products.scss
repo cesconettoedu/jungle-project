@@ -49,10 +49,18 @@ main section.categories-show {
           color: white;
         }
 
+        .soldout {
+          background: white;
+          color: rgb(236, 5, 5);
+          border: 2px solid rgba(255, 55, 55, 0.8);
+
+        }
+
         button {
           background: white;
           color: rgba(0, 130, 29, 0.7);
         }
+
       }
       img {
         width: 100%;
@@ -79,6 +87,7 @@ main section.categories-show {
       }
       div {
         display: flex;
+        // justify-content: right; 
         justify-content: space-between;
         padding: 0.5em;
         form {
