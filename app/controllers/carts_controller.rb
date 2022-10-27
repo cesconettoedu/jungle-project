@@ -1,5 +1,12 @@
 class CartsController < ApplicationController
 
+  
+  
+
+  # Using before_filter :authorize, didn't work for me. I used before_action :authorize instead.
+
+
+
   def show
     if enhanced_cart.length == 0
       @empty_cart = true
